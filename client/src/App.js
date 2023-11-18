@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import SignInPage from './components/SignInPage';
 import VolunteerForm from './components/VolunteerForm';

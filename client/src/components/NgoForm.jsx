@@ -2,18 +2,20 @@ import React, { useState } from 'react';
 import { AWS_URL } from '../const';
 import axios from 'axios';
 
+const initialForm = {
+  email: '',
+  name: '',
+  fieldOfInterest: '',
+  volunteerDays: '',
+  phoneNumber: '',
+  address: '',
+  pinCode: '',
+  description: '',
+};
+
 const NgoForm = () => {
   // State to store form data
-  const [formData, setFormData] = useState({
-    email: '',
-    name: '',
-    fieldOfInterest: '',
-    volunteerDays: '',
-    phoneNumber: '',
-    address: '',
-    pinCode: '',
-    description: '',
-  });
+  const [formData, setFormData] = useState(initialForm);
 
   // Function to handle form submission
   const handleSubmit = async (e) => {
@@ -27,6 +29,7 @@ const NgoForm = () => {
               'Content-Type': 'application/json',
             },
           });
+          setFormData(initialForm);
     }
     catch (err) {
         console.log(err);

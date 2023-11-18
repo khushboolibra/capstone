@@ -7,7 +7,7 @@ const NgoForm = () => {
   const [formData, setFormData] = useState({
     email: '',
     name: '',
-    fieldOfWork: '',
+    fieldOfInterest: '',
     volunteerDays: '',
     phoneNumber: '',
     address: '',
@@ -70,8 +70,8 @@ const NgoForm = () => {
           <label>Field of Work:</label>
           <input
             type="text"
-            name="fieldOfWork"
-            value={formData.fieldOfWork}
+            name="fieldOfInterest"
+            value={formData.fieldOfInterest}
             onChange={handleChange}
           />
         </div>

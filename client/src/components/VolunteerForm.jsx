@@ -8,7 +8,7 @@ const VolunteerForm = () => {
     email: '',
     name: '',
     fieldOfInterest: '',
-    availabilityDays: '',
+    volunteerDays: '',
     phoneNumber: '',
     address: '',
     pinCode: '',
@@ -80,8 +80,8 @@ const VolunteerForm = () => {
           <label>Availability Days:</label>
           <input
             type="text"
-            name="availabilityDays"
-            value={formData.availabilityDays}
+            name="volunteerDays"
+            value={formData.volunteerDays}
             onChange={handleChange}
           />
         </div>

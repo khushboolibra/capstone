@@ -2,18 +2,20 @@ import React, { useState } from 'react';
 import { AWS_URL } from '../const';
 import axios from 'axios';
 
+const initialForm = {
+  email: '',
+  name: '',
+  fieldOfInterest: '',
+  volunteerDays: '',
+  phoneNumber: '',
+  address: '',
+  pinCode: '',
+  description: '',
+};
+
 const NgoForm = () => {
   // State to store form data
-  const [formData, setFormData] = useState({
-    email: '',
-    name: '',
-    fieldOfWork: '',
-    volunteerDays: '',
-    phoneNumber: '',
-    address: '',
-    pinCode: '',
-    description: '',
-  });
+  const [formData, setFormData] = useState(initialForm);
 
   // Function to handle form submission
   const handleSubmit = async (e) => {
@@ -27,6 +29,7 @@ const NgoForm = () => {
               'Content-Type': 'application/json',
             },
           });
+          setFormData(initialForm);
     }
     catch (err) {
         console.log(err);
@@ -95,8 +98,8 @@ const NgoForm = () => {
             <input
             className='bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name'
             type="text"
-            name="fieldOfWork"
-            value={formData.fieldOfWork}
+            name="fieldOfInterest"
+            value={formData.fieldOfInterest}
             onChange={handleChange}
           />
           </div>

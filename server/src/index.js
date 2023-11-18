@@ -8,8 +8,9 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+const PORT = 8080;
 
-app.listen(8080, "0.0.0.0", () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log("serever is runing at port 8080");
 });
 

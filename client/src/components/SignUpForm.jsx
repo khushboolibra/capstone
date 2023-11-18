@@ -15,11 +15,10 @@ const SignUpForm = () => {
   };
 
   return (
-    <div class="signup">
-      <h2>Sign Up</h2>
-      <div>
-        <div>
-          <label>Sign up as:</label>
+    <div className="flex flex-auto flex-col items-center">
+      <h1 className='font-bold text-2xl pb-5'>Sign Up</h1>
+        <div className='flex flex-row flex-auto pb-10'>
+          <label className='font-semibold text-lg px-3'>Sign up as:</label>
           <select value={signUpAs} onChange={handleSignUpChange} required>
             <option value="" disabled>Select</option>
             <option value="ngo">NGO</option>
@@ -27,8 +26,6 @@ const SignUpForm = () => {
           </select>
         </div>
 
-        {/* Other fields can be added here */}
-      </div>
       {
         signUpAs === 'volunteer' ? <VolunteerForm /> : <NgoForm />
       }

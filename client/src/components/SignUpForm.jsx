@@ -18,8 +18,8 @@ const SignUpForm = () => {
     <div className="flex flex-auto flex-col items-center">
       <h1 className='font-bold text-2xl pb-5'>Sign Up</h1>
         <div className='flex flex-row flex-auto pb-10'>
-          <label className='font-semibold text-lg px-3'>Sign up as:</label>
-          <select value={signUpAs} onChange={handleSignUpChange} required>
+          <label className='font-semibold text-lg px-3'>Enter details as:</label>
+          <select value={signUpAs} onChange={handleSignUpChange} required style={{ color: 'black'}}>
             <option value="" disabled>Select</option>
             <option value="ngo">NGO</option>
             <option value="volunteer">Volunteer</option>

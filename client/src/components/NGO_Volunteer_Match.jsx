@@ -30,7 +30,7 @@ const NGO_Volunteer_Match = () => {
             </div>
             {/* Volunteers of an NGO Section */}
             <section className="py-11">
-                <h2 className="text-4xl font-extrabold dark:text-blue">Volunteers of an NGO</h2>
+                <h2 className="text-4xl font-extrabold dark:text-blue">Volunteers matched for an NGO</h2>
                 <div className="relative overflow-x-auto">
                     <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
@@ -73,7 +73,7 @@ const NGO_Volunteer_Match = () => {
 
             {/* NGOs for a Volunteer Section */}
             <section>
-                <h2 className="text-4xl font-extrabold dark:text-blue">NGOs for a Volunteer</h2>
+                <h2 className="text-4xl font-extrabold dark:text-blue">NGOs matched for a Volunteer</h2>
                 <div className="relative overflow-x-auto">
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
